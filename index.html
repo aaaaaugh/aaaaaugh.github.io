@@ -1,2 +1,38 @@
-hello
+<div style = "font-size: 420px;"> 
+  hello<span style = "color: pink;" onclick = "helloworld();">.</span>
+</div>
+<img id = "risotto" src = "risotto.png">
 
+<script>
+var isRisottoVisible = true; 
+
+function helloworld() {
+  var risotto = document.getElementById("risotto"); //this gets the element w/ id risotto from html
+  isRisottoVisible = !isRisottoVisible; 
+  if(isRisottoVisible){
+    risotto.style = "visibility: visible;" 
+  }
+  else{
+    risotto.style = "visibility: hidden;" 
+  }
+
+console.log("hello world!"); 
+//alert("hello world!"); 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
